@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }: PageProps) {
   const headings = extractHeadings(post.content);
   const related = getRelatedPosts(post, 3);
 
-  const siteUrl = "https://intimate-wellness.example";
+  const siteUrl = "https://wellness.eastlink-hub.com";
 
   return (
     <>

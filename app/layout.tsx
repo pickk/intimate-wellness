@@ -17,9 +17,11 @@ const sourceSerif = Source_Serif_4({
   display: "swap",
 });
 
-const siteUrl = "https://intimate-wellness.example";
+const siteUrl = "https://wellness.eastlink-hub.com";
 const siteDescription =
   "A health-focused publication sharing evidence-based knowledge on sexual wellness, intimacy, and relationships. Educational, tasteful, and human.";
+const defaultOgImage =
+  "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&h=630&fit=crop";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,11 +36,20 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "IntimateWellness",
     type: "website",
+    images: [
+      {
+        url: defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "IntimateWellness — Sexual Health, Wellness & Relationship Guides",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "IntimateWellness",
     description: siteDescription,
+    images: [defaultOgImage],
   },
   alternates: {
     types: {
